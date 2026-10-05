@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CareChain - Track Request</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <nav>
+
+        <h2>CareChain</h2>
+
+        <div>
+
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="track.html">Track</a>
+            <a href="about.html">About</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <section class="trace-section">
+
+        <h1>Track Your Request</h1>
+
+        <p>
+            Enter your Request ID to check the current status.
+        </p>
+
+
+        <form action="php/track.php" method="post">
+
+            <label>Request ID</label>
+
+            <input
+                type="text"
+                name="request_id"
+                placeholder="Example: CLO347"
+                required
+            >
+
+            <br><br>
+
+            <button type="submit">
+                Track Request
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <section class="how-it-works">
+
+        <h2>Request Status Flow</h2>
+
+        <div class="steps">
+
+            <div>
+                <h3>1. Request Received</h3>
+                <p>Your request has been received.</p>
+            </div>
+
+            <div>
+                <h3>2. Processing</h3>
+                <p>Your request is being processed.</p>
+            </div>
+
+            <div>
+                <h3>3. Dispatched</h3>
+                <p>Your resource has been dispatched.</p>
+            </div>
+
+            <div>
+                <h3>4. In Transit</h3>
+                <p>Your resource is on the way.</p>
+            </div>
+
+            <div>
+                <h3>5. Delivered</h3>
+                <p>Your resource has been delivered.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 CareChain | Resource Traceability System
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

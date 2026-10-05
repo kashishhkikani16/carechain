@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CareChain - Admin Panel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <nav>
+
+        <h2>CareChain</h2>
+
+        <div>
+
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="track.html">Track</a>
+            <a href="about.html">About</a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="request-section">
+
+        <h1>Admin Panel</h1>
+
+        <p>
+            Update the status of a resource request.
+        </p>
+
+
+        <form action="php/admin.php" method="post">
+
+
+
+            <label>Request ID</label>
+
+            <input
+                type="text"
+                name="request_id"
+                placeholder="Example: CLO347"
+                required
+            >
+
+
+
+            <h3>Select Status</h3>
+
+            <select name="status" required>
+
+                <option value="">
+                    Select Status
+                </option>
+
+                <option value="Request Received">
+                    Request Received
+                </option>
+
+                <option value="Processing">
+                    Processing
+                </option>
+
+                <option value="Dispatched">
+                    Dispatched
+                </option>
+
+                <option value="In Transit">
+                    In Transit
+                </option>
+
+                <option value="Delivered">
+                    Delivered
+                </option>
+
+            </select>
+
+
+            <br><br>
+
+            <button type="submit">
+                Update Status
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <footer>
+
+        <p>
+            © 2026 CareChain | Resource Traceability System
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

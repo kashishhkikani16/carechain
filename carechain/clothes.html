@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CareChain - Clothes Request</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>CareChain</h2>
+
+        <div>
+
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="track.html">Track</a>
+            <a href="about.html">About</a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="request-section">
+
+        <h1>Clothes Request</h1>
+
+        <p>
+            Enter your details and select the clothes you require.
+        </p>
+
+
+        <form action="php/clothes.php" method="post">
+
+
+            <label>Your Name</label>
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>Mobile Number</label>
+
+            <input
+                type="tel"
+                name="mobile"
+                placeholder="Enter your 10 digit mobile number"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                required
+            >
+
+
+            <label>Delivery Address</label>
+
+            <textarea
+                name="address"
+                placeholder="Enter your complete delivery address"
+                rows="4"
+                required
+            ></textarea>
+
+
+            <label>Pincode</label>
+
+            <input
+                type="text"
+                name="pincode"
+                placeholder="Enter 6 digit pincode"
+                maxlength="6"
+                pattern="[0-9]{6}"
+                required
+            >
+
+
+            <label>Clothes Type</label>
+
+            <select name="clothes" required>
+
+                <option value="">Select Clothes</option>
+
+                <option value="Shirt">Shirt</option>
+
+                <option value="T-Shirt">T-Shirt</option>
+
+                <option value="Pants">Pants</option>
+
+                <option value="Jeans">Jeans</option>
+
+                <option value="Jacket">Jacket</option>
+
+                <option value="Kurta">Kurta</option>
+
+                <option value="Saree">Saree</option>
+
+                <option value="Dress">Dress</option>
+
+            </select>
+
+
+            <label>Size</label>
+
+            <select name="size" required>
+
+                <option value="">Select Size</option>
+
+                <option value="S">S</option>
+
+                <option value="M">M</option>
+
+                <option value="L">L</option>
+
+                <option value="XL">XL</option>
+
+                <option value="XXL">XXL</option>
+
+            </select>
+
+
+            <label>Quantity</label>
+
+            <input
+                type="number"
+                name="quantity"
+                placeholder="Enter quantity"
+                min="1"
+                required
+            >
+
+
+            <br><br>
+
+
+            <br><br>
+
+
+<a href="resources.html">
+
+    <button type="button">
+        Back
+    </button>
+
+</a>
+
+
+<button type="submit">
+    Submit Clothes Request
+</button>
+
+
+        </form>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 CareChain | Resource Traceability System
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

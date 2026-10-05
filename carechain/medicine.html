@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CareChain - Medicine Request</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>CareChain</h2>
+
+        <div>
+
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="track.html">Track</a>
+            <a href="about.html">About</a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="request-section">
+
+        <h1>Medicine Request</h1>
+
+        <p>
+            Enter your details and select the medicine you require.
+        </p>
+
+
+        <form action="php/medicine.php" method="post">
+
+
+            <label>Your Name</label>
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>Mobile Number</label>
+
+            <input
+                type="tel"
+                name="mobile"
+                placeholder="Enter your 10 digit mobile number"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                required
+            >
+
+
+            <label>Delivery Address</label>
+
+            <textarea
+                name="address"
+                placeholder="Enter your complete delivery address"
+                rows="4"
+                required
+            ></textarea>
+
+
+            <label>Pincode</label>
+
+            <input
+                type="text"
+                name="pincode"
+                placeholder="Enter 6 digit pincode"
+                maxlength="6"
+                pattern="[0-9]{6}"
+                required
+            >
+
+
+            <label>Medicine Name</label>
+
+            <select name="medicine" required>
+
+                <option value="">Select Medicine</option>
+
+                <option value="Paracetamol">
+                    Paracetamol
+                </option>
+
+                <option value="Cetirizine">
+                    Cetirizine
+                </option>
+
+                <option value="Ibuprofen">
+                    Ibuprofen
+                </option>
+
+                <option value="Amoxicillin">
+                    Amoxicillin
+                </option>
+
+                <option value="Azithromycin">
+                    Azithromycin
+                </option>
+
+                <option value="ORS">
+                    ORS
+                </option>
+
+                <option value="Antacid">
+                    Antacid
+                </option>
+
+                <option value="Cough Syrup">
+                    Cough Syrup
+                </option>
+
+                <option value="Vitamin Tablets">
+                    Vitamin Tablets
+                </option>
+
+                <option value="Calcium Tablets">
+                    Calcium Tablets
+                </option>
+
+                <option value="Iron Tablets">
+                    Iron Tablets
+                </option>
+
+            </select>
+
+
+            <label>Quantity</label>
+
+            <input
+                type="number"
+                name="quantity"
+                placeholder="Enter quantity"
+                min="1"
+                required
+            >
+
+
+            <br><br>
+
+<a href="resources.html">
+
+    <button type="button">
+        Back
+    </button>
+
+</a>
+
+
+<button type="submit">
+    Submit Medicine Request
+</button>
+
+
+        </form>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 CareChain | Resource Traceability System
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
